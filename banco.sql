@@ -1,10 +1,8 @@
--- Script do banco de dados do Linka+ (CRUD de Instituições Parceiras e Atividades)
--- Executar no MySQL Workbench (ou no terminal do MySQL) antes de rodar o sistema.
 
 CREATE DATABASE IF NOT EXISTS linka_startup;
 USE linka_startup;
 
--- Tabela 1: instituições parceiras (ONGs, empresas, faculdades)
+
 CREATE TABLE IF NOT EXISTS instituicao_parceira (
     id INT AUTO_INCREMENT PRIMARY KEY,
     nome VARCHAR(100) NOT NULL,
@@ -12,7 +10,7 @@ CREATE TABLE IF NOT EXISTS instituicao_parceira (
     email VARCHAR(100) NOT NULL
 );
 
--- Tabela 2: atividades oferecidas pelas instituições (relação 1:N)
+
 CREATE TABLE IF NOT EXISTS atividade (
     id INT AUTO_INCREMENT PRIMARY KEY,
     titulo VARCHAR(100) NOT NULL,
@@ -22,7 +20,7 @@ CREATE TABLE IF NOT EXISTS atividade (
     FOREIGN KEY (id_instituicao) REFERENCES instituicao_parceira(id)
 );
 
--- Dados de exemplo (opcional)
+-- Dados de exemplo
 INSERT INTO instituicao_parceira (nome, cnpj, email) VALUES
     ('ONG Futuro Jovem', '12.345.678/0001-90', 'contato@futurojovem.org');
 
