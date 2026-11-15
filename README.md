@@ -7,9 +7,9 @@ O sistema permite cadastrar, listar, atualizar e excluir **Instituições Parcei
 ## Screenshots
 
 
-![Menu principal](imagens/menu.png)
-![Tela de instituições](imagens/instituicoes.png)
-![Tela de atividades](imagens/atividades.png)
+![Menu principal](imagens/Tela_Inicial.png)
+![Tela de instituições](imagens/Tela_instituições.png)
+![Tela de atividades](imagens/Tela_Atividades.png)
 
 ## Integrantes
 
